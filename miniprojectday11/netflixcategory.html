@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.body{
+    font-family: Arial;
+    padding: 20px;
+}
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 20px;
+    border:2px solid black;
+}
+.nav a{
+    display: inline;
+    text-decoration: none;
+    color: black;
+    padding:8px;
+    margin-left:15px;
+}
+.nav a:hover{
+    background: black;
+    color: white;
+    transform: 0.5s;
+}
+.catogories{
+    display:flex;
+    gap:15px;
+    margin-top:20px;
+}
+.category{
+    border:1px solid black;
+    padding: 15px;
+}
+.category:hover{
+
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+}
+    </style>
+</head>
+<body>
+    <!-- netflix movie category layout -->
+
+    <header>
+        <h1>Movie Zone</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Series</a>
+            <a href="#">Movies</a>
+            <a href="#">My wish List</a>
+        </nav>
+    </header>
+    <section class="categories">
+        <div class="category">Action</div>
+        <div class="category">Comedy</div>
+        <div class="category">Horror</div>
+        <div class="category">Drama</div>
+    </section>
+
+    <section class="Movies">
+        <div class="movie-card">
+        <h3>Avengers</h3>
+        </div>
+        <div class="movie-card">
+        <h3>Frozen</h3>
+        </div>
+        <div class="movie-card">
+        <h3>Titanic</h3>
+        </div>
+        <div class="movie-card">
+        <h3>Tangled</h3>
+        </div>
+        <div class="movie-card">
+        <h3>Fast and Furious</h3>
+        </div>
+        <div class="movie-card">
+        <h3>Batman</h3>
+        </div>
+        <div class="movie-card">
+        <h3>Iron Man</h3>
+        </div>
+    </section>
+</body>
+</html>
