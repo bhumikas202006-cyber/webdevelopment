@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .dashboard{
+            margin: 20px;
+            background:burlywood;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: chocolate 0px 20px 15px;
+        }
+        header{
+            text-align: center;
+            margin-bottom: 20px;
+            background-color: rgb(250, 223, 184);
+            border-radius: 10px;
+            font-family:cursive;
+        }
+        .summarycards{
+            display: flex;
+            gap: 20px;
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+        .cards{
+            background: chocolate;
+            color: black;
+            padding: 20px;
+            border-radius: 20px;
+            flex: 1;
+            text-align: center;
+        }
+        .cards p{
+            margin-top: 20px;
+            font-size: 24px;
+        }
+        .categories{
+            margin-bottom: 20px;
+
+        }
+        .category{
+            display: flex;
+            justify-content: space-between;
+            background: wheat;
+            padding: 10px;
+            border-radius: 15px;
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        .category:hover{
+            background:rgb(19, 10, 4);
+            color: white;
+            cursor: pointer;
+        }
+        .transactions{
+            margin-bottom: 20px;
+        }
+        .trans{
+            
+            display: flex;
+            padding: 10px;
+            justify-content: space-between;
+            background:rgb(184, 92, 26);
+            border-radius: 15px;
+            margin:10px
+        }
+        .trans:hover{
+            background:rgb(19, 10, 4);
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard">
+        <header>
+            <h1>My Expense Tracker</h1>
+            <h2>track my monthly spending expenses</h2>
+        </header>
+    </p>
+    </header>
+    <section class="summarycards">
+    <div class="cards">Total Spent</div>
+    <p>10000.00</p>
+    <div class="cards">Highest Category</div>
+    <p>Food</p>
+    <div class="cards">Current Month</div>
+    <p>July 2025</p>
+
+
+    </section>
+    <section class="categories">
+        <h2>Expense Categories</h2>
+    <div class="category">
+        <span>Movies</span>
+    <p>2000</p>
+</div>
+ <div class="category">
+        <span>Shopping</span>
+        <p>3000</p>
+        </div>
+ <div class="category">
+        <span>Transport</span>
+        <p>1000</p>
+        </div>    
+    <div class="category">
+        <span>Food</span>
+        <p>4000</p>
+        </div>
+
+    </section>
+    <section class="transactions">
+        <h2>Recent Expences</h2>
+        <div class="trans">
+            <span>Movie tickect</span>
+            <span>5th july 2025</span>
+            <span>rs.600</span>
+        </div>
+         <div class="trans">
+            <span>Groceries   </span>
+            <span>6th july 2025</span>
+            <span>rs.1200</span>
+        </div>
+        <div class="trans">
+            <span>Gift      </span>
+            <span>7th july 2025</span>
+            <span>rs.1000</span>
+        </div>
+        <div class="trans">
+            <span>Restaurent</span>
+            <span>9th july 2025</span>
+            <span>rs.850</span>
+        </div>
+    </section>
+</div>
+</body>
+</html>
