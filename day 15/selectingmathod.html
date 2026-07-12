@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    
+<!----DOM -helps us connect HTML with javascript----->
+
+<p id="myParagraph"> hello </p>
+<button id="btn"> click me </button>
+
+<div class="myclass">this is a div - 0</div>
+<div class="myclass">this is a div -1</div>
+
+<p>hellloo bhumika</p>
+<p>helloo keerthana</p>
+<script>
+    //select html tag by selecting methods
+    //1. getElementById('select id')
+
+    var ele = document.getElementById("myParagraph")
+    console.log(ele)
+
+    const btn = document.getElementById("btn")
+    console.log(btn)
+
+    // .textcontent - to change the text content of the selected element
+    console.log(ele.textContent)
+
+// 2. getElementsByClassName('select class name') - returns an array of elements with the same class name
+
+    const ele2= document.getElementsByClassName("myclass")
+    console.log(ele2)
+    console.log(ele2[0].textContent)
+    console.log(ele2[0])
+
+
+    //3. getElementsByTagName('select tag name') - returns an array of elements with the same tag name
+    const ele3= document.getElementsByTagName("p")
+    console.log(ele3)
+
+    console.log(ele3[0].textContent)
+    console.log(ele3[1].textContent)
+    console.log(ele3[2].textContent)
+
+    //4. querySelector() - follows css slector rule - idname - #id, classname - .classname, tagname - tagname
+    //will select only first ele/tag
+
+    const ele4 = document.querySelector("#myParagraph")
+    console.log(ele4)
+
+    const ele5 = document.querySelector(".myclass")
+    console.log(ele5)
+
+    const ele6 = document.querySelector("p")
+    console.log(ele6)
+
+    // 5. querySelectorAll() - follows css slector rule - idname - #id, classname - .classname, tagname - tagname
+    // will select all the ele/tag
+
+    const ele7 = document.querySelectorAll(".myclass")
+    console.log(ele7)
+</script>
+
+
+
+
+</body>
+</html>

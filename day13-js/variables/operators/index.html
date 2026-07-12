@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<script>
+    
+    //operators - used to perform operations on variables and values
+    // 01 arithmetic operators - +,-,*,/,%
+    var a=10
+    var b=20
+    console.log(a+b)
+    console.log(a-b)
+    console.log(a*b)
+    console.log(a/b)
+    console.log(a%b)
+
+    // 02 assignment operators - =,+=,-=,*=,/=
+    var c=10
+    c+=5 //c=c+5
+    console.log(c)
+
+    var d=20
+    d-=5 //d=d-5
+    console.log(d)
+
+    var e=30
+    e*=2 //e=e*2
+    console.log(e)
+
+    var f=40
+    f/=4 //f=f/4
+    console.log(f)
+
+    // 03 comparison operators - ==,===,!=,!==,>,<,>=,<=
+    var g=10
+    var h=20
+    console.log(g==h) //only checks value left == right value are same true
+    console.log(g===h) //checks value and datatype left === right value and datatype are same true
+    console.log(g!=h)
+    console.log(g!==h)
+    console.log(g>h)
+    console.log(g<h)
+    console.log(g>=h)
+    console.log(g<=h)
+
+    //logical operators - && (AND),|| (OR),! (NOT)
+    var ismember=false
+
+    var totalbill=1000
+
+    console.log("discount applicable: " ,ismember && totalbill > 500)
+
+    var isloggedin=true
+    var bill = 500 
+
+    console.log("first time discount unlocked" , isloggedin && bill >= 500)
+
+    //OR ||
+
+    var isloggedin = true
+    var canwatchmovie = false
+    console.log( isloggedin || canwatchmovie)
+
+
+    //NOT !
+    var isloggedin = true
+    console.log(!isloggedin)
+</script>
+
+
+</body>
+</html>
