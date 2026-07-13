@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //callback - to achieve asynchronize programming - multiple task at same time
+    //callbackis a function
+    //and callback is passed as parameter(inside) into another function
+    
+
+    function dohomework(subject,callback){
+        console.log("doing homework for",subject)
+
+     callback();   //without calling fun we cannot get output
+
+    }
+    dohomework("maths",function(){
+        console.log("homework is done")
+    })
+
+    //multiple fun make code unreadable the problem called callback hell
+    </script>
+</body>
+</html>
